@@ -103,11 +103,8 @@ food getRandomFood() const
 int index = rand() % size;
 node *curr = first;
 for(int i = 0; i < index; i++)
-curr = curr->next;
 return curr->foodItem;
 }
-
-
 };
 
 void printMeal(food mealArr[3]);
@@ -226,7 +223,7 @@ void randomMeal(const FoodList &flist, food mealArr[3])
 {
 food f;
 
-for(int i = 0; i < 3; )
+for(int i = 0; i < 3; i++)
 {
 f = flist.getRandomFood();
 
@@ -243,7 +240,7 @@ break;
 
 if(!dup)
 {
-mealArr[i++] = f;
+mealArr[i] = f;
 }
 }
 }
