@@ -116,8 +116,8 @@ int main()
 {
 
 // Open file
-//string filename = "/home/staff/dbock/csc125/projects/project1/foods.txt";
-string filename = "foods.txt";
+string filename = "/home/staff/dbock/csc125/projects/project1/foods.txt";
+//string filename = "foods.txt";
 fstream in(filename.c_str() , ios::in );
 
 if(in.fail())
